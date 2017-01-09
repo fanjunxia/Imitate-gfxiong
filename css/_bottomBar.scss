@@ -1,0 +1,16 @@
+#bottomBar {
+  padding: 46px 0;
+  background-color: rgb(2, 10, 31);
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  .login {
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    background: url('../img/login.png');
+    text-indent: -999em;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+}

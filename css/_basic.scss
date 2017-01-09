@@ -1,0 +1,93 @@
+body {
+  font-family: 'microsoft yahei','FangSong', sans-serif;
+  background-color: #d6faff;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+@mixin h($size) {
+  font-size: $size;
+  line-height: $size;
+}
+
+h1, .h1 {
+  @include h(40px);
+}
+
+h2, .h2 {
+  @include h(32px);
+}
+
+h3, .h3 {
+  @include h(22px);
+}
+
+h4, .h4 {
+  @include h(18px);
+}
+
+h5, .h5 {
+  @include h(16px);
+}
+
+a{
+  text-decoration: none;
+}
+
+.box {
+  overflow: hidden;
+  position: relative;
+  color: #333333;
+
+  > div {
+    width: 1100px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  &.white {
+    background-color: white;
+  }
+  &.grey {
+    background-color: #f8f8f8;
+  }
+  &.yellow {
+    background-color: #fedf50;
+  }
+  &.red {
+    background-color: #e65145;
+  }
+  &.black {
+    background-color: #020a1f;
+    color: #ffffff;
+  }
+
+  &:after {
+    content: ' ';
+    clear: both;
+    display: block;
+    height: 1px;
+    margin-top: -1px;
+  }
+}
+
+.clear {
+  clear: both;
+  &:after {
+    content: ' ';
+    display: block;
+  }
+}

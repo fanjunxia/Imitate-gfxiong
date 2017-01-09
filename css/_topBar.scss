@@ -1,0 +1,21 @@
+#topBar{
+  padding: 18px 0;
+  height: 48px;
+  .logo{
+    float: left;
+    img{
+      display: block;
+    }
+  }
+  .menu{
+    float: right;
+    a{
+      color: #333333;
+      display: block;
+      height: 48px;
+      line-height: 48px;
+      padding: 0 18px;
+      background: url("../img/menu/phone.png") no-repeat left;
+    }
+  }
+}
